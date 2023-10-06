@@ -2,11 +2,11 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "sourceMap": true,
-    "lib": ["ES2020", "DOM"],
-    "jsx": "react",
-    "module": "esnext",
+    "lib": ["ES2020", "DOM"], // 컴파일을 할 때 어떤 javscript내장 라이브러리를 설정할지 사용할지? 설정하는 옵션 
+    "jsx": "react", // jsx종류가 많은데 react로 사용할 jsx로 컴파일한다? 라는 의미라고 생각
+    "module": "esnext", // module를 불러올 때 어떤 문법을 사용할 건지 commonjs면 require es6,exnext면 import 등등 
     "moduleResolution": "Node",
-    "target": "es5",
+    "target": "es5",  // 어떤 자바스크립트 버전으로 컴파일할지를 결정하는 옵션 
     "strict": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
