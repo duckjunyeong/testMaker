@@ -9,7 +9,7 @@ const [password, setPassword] = useState('');
 const createUser = useCallback((e)=>{
     e.preventDefault();
     console.log(email, nickname, password)
-    axios.post("/api/user", {email,nickname, password})
+    axios.post("http://localhost:3085/api/user", {email,nickname, password})
     .then((response) => {   
         console.log(response)
     })
